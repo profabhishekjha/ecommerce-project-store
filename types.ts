@@ -19,6 +19,7 @@ export interface Product {
   size: Size;
   color: Color;
   quantity: number;
+  description: string;
   images: Image[];
 }
 

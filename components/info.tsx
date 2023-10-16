@@ -43,17 +43,10 @@ const Info: React.FC<InfoProps> = ({ data }) => {
             style={{ backgroundColor: data?.color?.name }}
           />
         </div>
-        {/* <div className="flex">
-          <Minus
-            className="cursor-pointer"
-            onClick={() => setCount(count - 1)}
-          />
-          {count}
-          <Plus
-            className="cursor-pointer"
-            onClick={() => setCount(count + 1)}
-          />
-        </div> */}
+        <div className="flex items-center gap-x-4">
+          <h3 className="font-semibold text-black">Description:</h3>
+          <div>{data?.description}</div>
+        </div>
       </div>
       <div className="mt-10 flex items-center gap-x-3">
         <Button onClick={onAddToCart} className="flex items-center gap-x-2">
